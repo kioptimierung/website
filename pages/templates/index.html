@@ -1,0 +1,1505 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>KI Experten</title>
+    <link rel="stylesheet" href="{% static 'assets/css/aos.css' %}" />
+    <link rel="stylesheet" href="{% static 'assets/css/fontawesome-all.min.css' %}" />
+    <link rel="stylesheet" href="{% static 'assets/css/bootstrap.min.css' %}" />
+    <link rel="stylesheet" href="{% static 'assets/css/glightbox-min.css' %}" />
+    <link rel="stylesheet" href="{% static 'assets/css/swiper-bundle.min.css' %}" />
+    <link rel="stylesheet" href="{% static 'assets/css/style.css' %}" />
+    
+  </head>
+  <body>
+    
+    <!-- Menu Start -->
+    <header class="header-primary">
+      <div class="container">
+        <nav class="navbar navbar-expand-xl justify-content-between">
+          <a href="{% url 'home' %}">
+            <img src="{% static 'assets/img/logo/logos-m.svg' %}" alt="" />
+          </a>
+          <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav mx-auto">
+              <li class="d-block d-xl-none">
+                <div class="logo">
+                  <a href="{% url 'home' %}"
+                    ><img src="{% static 'assets/img/logo/logos-m.svg' %}" alt=""
+                  /></a>
+                </div>
+              </li>
+              <li class="nav-item">
+                <a href="{% url 'contact' %}" class="nav-link">Kostenlose Beratung</a>
+            </li>
+            
+            </ul>
+            <div class="d-flex align-items-center gap-4 mt-4">
+              
+            </div>
+          </div>
+          <div class="navbar-right d-flex align-items-center gap-4">
+            
+            <button
+              class="navbar-toggler d-block d-xl-none"
+              type="button"
+              data-bs-toggle="collapse"
+              data-bs-target="#navbarNav"
+              aria-controls="navbarNav"
+              aria-expanded="false"
+              aria-label="Toggle navigation"
+            >
+              <span></span>
+            </button>
+          </div>
+        </nav>
+      </div>
+    </header>
+    <!-- Menu End -->
+
+
+
+    
+    <!-- Main Start -->
+    <main class="wrapper">
+      <!-- Hero Start -->
+      <section
+        class="aai-hero-one position-relative"
+        style="background: url('{% static 'assets/img/hero/x.gif' %}') no-repeat center center/cover;"
+
+      >
+        <div class="container">
+          <div class="row">
+            <div class="col-lg-12 col-xl-7">
+              <div class="aai-hero-one-content">
+                <h1 class="aai-hero-one-title">
+                  Die KI-Agentur für<br />
+                  <span
+                    class="gradient-text typing-animation"
+                    data-strings='["Automatisierung","Datenanalyse","Marketing","Bilderkennung","Spracherkennung","Modellentwicklung","IoT-Integration","Empfehlungssysteme","Sentiment-Analyse","Supply-Chain","Kundenverhaltensanalyse","Machine Learning","Big Data","Risikomanagement","Qualitätskontrolle"]'
+                    >Chatbots</span
+                  >
+                </h1>
+                <p class="aai-hero-one-desc">
+                  Nutzen Sie die KI, um Ihr Business anzukurbeln <br>und automatisieren Sie Ihre Workflows<br> 
+                </p>
+                
+                <div class="mt-5 d-flex flex-column flex-md-row aai-btns-group">
+                  <a href="{% url 'contact' %}" class="aai-btn btn-pill-solid"><b>Kostenloses</b><br>Beratungsgespräch<br></a>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-10 col-xl-5 mt-5 mt-lg-0">
+              <div class="aai-hero-one-img">
+                <img
+                  src="{% static 'assets/img/hero/D.gif' %}"
+                  class="img-fluid aai-hero-img d-none d-xl-block"
+                  alt=""
+                /><img
+                  src="{% static 'assets/img/hero/D.gif' %}"
+                  class="img-fluid aai-hero-img d-xl-none"
+                  alt=""
+                />
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- Hero End -->
+
+      <!-- Writing Step -->
+      <section class="writing-steps-area py-5">
+        <div class="container">
+          <div class="writing-steps-wrapper" data-aos="fade-up">
+            <div class="row">
+              <div class="col-lg-4">
+                <div class="writing-step border-0 pe-0">
+                  <img
+                    src="{% static 'assets/img/icons/Add-User.svg' %}"
+                    class="writing-step-icon"
+                    alt=""
+                  />
+                  <h3 class="writing-step-title">1. Erstgespräch</h3>
+                  <p class="writing-step-desc">
+                    Wir analysieren, wie wir Ihr Unternehmen helfen können, indem wir Ihre aktuellen Abläufe kennen lernen.                  
+                  </p>
+                </div>
+              </div>
+              <div class="col-lg-4">
+                <div class="writing-step border-0 pe-0">
+                  <img
+                    src="{% static 'assets/img/icons/Wallet.svg' %}"
+                    class="writing-step-icon"
+                    alt=""
+                  />
+                  <h3 class="writing-step-title">2. Strategie</h3>
+                  <p class="writing-step-desc">
+                    Im Folgeanruf erhalten Sie unseren Vorschlag, einschließlich erwarteter Leistungen, Umsetzungsstrategie, Zeitplan und Preisen.                  </p>
+                </div>
+              </div>
+              <div class="col-lg-4">
+                <div class="writing-step border-0 pe-0">
+                  <img
+                    src="{% static 'assets/img/icons/Wallet.svg' %}"
+                    class="writing-step-icon"
+                    alt=""
+                  />
+                  <h3 class="writing-step-title">3. Umsetzung</h3>
+                  <p class="writing-step-desc">
+                    Sobald wir Ihr Okay erhalten haben, startet unser Team mit dem Arbeitsprozess.
+                  </p>
+                  
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- Writing Step End -->
+
+      <!-- Service Start -->
+      <section class="aai-services">
+        <div
+          style="
+            background: url('assets/img/bg/service-1.svg') no-repeat center
+              center/cover;
+          "
+          class="pt-120 pb-60"
+        >
+          <div class="container">
+            <div class="row align-items-center">
+              <div
+                class="col-xl-6 col-lg order-2 order-lg-1 mt-5 mt-lg-0"
+                data-aos="fade-right"
+              >
+                <div>
+                  <img
+                    src="{% static 'assets/img/services/service-2.svg' %}"
+                    class="img-fluid"
+                    alt=""
+                  />
+                </div>
+              </div>
+              <div class="col-xl-6 col-lg order-1 order-lg-2">
+                <div>
+                  <h2 class="section-title mb-4">
+                    Kundenservice und Supportautomatisierung
+                  </h2>
+                  <p class="section-desc">
+                    KI-Chatbots verbessern den Kundenservice, indem sie wie Menschen mit Kunden sprechen und ihnen helfen, Probleme selbst zu lösen.
+                  </p>
+                  <ul class="aai-list-items mt-4">
+                    <li class="aai-list-item d-flex align-items-center">
+                      <svg
+                        class="flex-shrink-0"
+                        width="24"
+                        height="24"
+                        viewBox="0 0 24 24"
+                        fill="none"
+                        xmlns="http://www.w3.org/2000/svg"
+                      >
+                        <g clip-path="url(#clip0_82_4624)">
+                          <circle cx="12" cy="12" r="12" fill="#4562FF" />
+                          <path
+                            fill-rule="evenodd"
+                            clip-rule="evenodd"
+                            d="M5.50114 12.7402C5.8868 12.3595 6.27246 11.9788 6.64135 11.6147C7.74803 12.7071 8.83793 13.783 9.94461 14.8754C12.4262 12.4257 14.9079 9.97607 17.3727 7.54297C17.7584 7.92366 18.1441 8.30435 18.5129 8.66849C15.6457 11.4988 12.7951 14.3126 9.92784 17.143C8.45227 15.6864 6.95994 14.2133 5.48438 12.7568L5.50114 12.7402Z"
+                            fill="white"
+                          />
+                        </g>
+                        <defs>
+                          <clipPath id="clip0_82_4624">
+                            <rect width="24" height="24" rx="12" fill="white" />
+                          </clipPath>
+                        </defs>
+                      </svg>
+                      <span class="aai-list-item-text"
+                        >Entlasten Mitarbeiter um über 20% reduziert.</span
+                      >
+                    </li>
+                    <li class="aai-list-item d-flex align-items-center">
+                      <svg
+                        class="flex-shrink-0"
+                        width="24"
+                        height="24"
+                        viewBox="0 0 24 24"
+                        fill="none"
+                        xmlns="http://www.w3.org/2000/svg"
+                      >
+                        <g clip-path="url(#clip0_82_4624)">
+                          <circle cx="12" cy="12" r="12" fill="#4562FF" />
+                          <path
+                            fill-rule="evenodd"
+                            clip-rule="evenodd"
+                            d="M5.50114 12.7402C5.8868 12.3595 6.27246 11.9788 6.64135 11.6147C7.74803 12.7071 8.83793 13.783 9.94461 14.8754C12.4262 12.4257 14.9079 9.97607 17.3727 7.54297C17.7584 7.92366 18.1441 8.30435 18.5129 8.66849C15.6457 11.4988 12.7951 14.3126 9.92784 17.143C8.45227 15.6864 6.95994 14.2133 5.48438 12.7568L5.50114 12.7402Z"
+                            fill="white"
+                          />
+                        </g>
+                        <defs>
+                          <clipPath id="clip0_82_4624">
+                            <rect width="24" height="24" rx="12" fill="white" />
+                          </clipPath>
+                        </defs>
+                      </svg>
+                      <span class="aai-list-item-text"
+                        >24/7 sofort erreichbar</span
+                      >
+                    </li>
+                    <li class="aai-list-item d-flex align-items-center">
+                      <svg
+                        width="24"
+                        height="24"
+                        viewBox="0 0 24 24"
+                        fill="none"
+                        xmlns="http://www.w3.org/2000/svg"
+                      >
+                        <g clip-path="url(#clip0_82_4624)">
+                          <circle cx="12" cy="12" r="12" fill="#4562FF" />
+                          <path
+                            fill-rule="evenodd"
+                            clip-rule="evenodd"
+                            d="M5.50114 12.7402C5.8868 12.3595 6.27246 11.9788 6.64135 11.6147C7.74803 12.7071 8.83793 13.783 9.94461 14.8754C12.4262 12.4257 14.9079 9.97607 17.3727 7.54297C17.7584 7.92366 18.1441 8.30435 18.5129 8.66849C15.6457 11.4988 12.7951 14.3126 9.92784 17.143C8.45227 15.6864 6.95994 14.2133 5.48438 12.7568L5.50114 12.7402Z"
+                            fill="white"
+                          />
+                        </g>
+                        <defs>
+                          <clipPath id="clip0_82_4624">
+                            S
+                            <rect width="24" height="24" rx="12" fill="white" />
+                          </clipPath>
+                        </defs>
+                      </svg>
+                      <span class="aai-list-item-text"
+                        >Mehr Leads Mehr Verkäufe</span
+                      >
+                    </li>
+                  </ul>
+                  <div class="mt-5">
+                    <a href="{% url 'contact' %}" class="aai-gradient-outline-btn">Jetzt starten</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div
+          class="pt-60 pb-60"
+          style="background: url('{% static 'assets/img/bg/service-2.jpeg' %}') no-repeat center center/cover;"
+
+        >
+          <div class="container">
+            <div class="row align-items-center">
+              <div class="col-xl-6 col-lg">
+                <div>
+                  <h2 class="section-title mb-4">
+                    Effizienzsteigerung in den Geschäftsabläufen
+                  </h2>
+                  <p class="section-desc">
+                    Die KI automatisiert nicht nur einfache Aufgaben, sondern kann auch komplexe Aufgaben wie das Lesen von Dokumenten, das Zusammenstellen von Waren und die Erstellung von Prognosen in Sekundenschnelle übernehmen.
+                  </p>
+                  <ul class="aai-list-items mt-4">
+                    <li class="aai-list-item d-flex align-items-center">
+                      <svg
+                        class="flex-shrink-0"
+                        width="24"
+                        height="24"
+                        viewBox="0 0 24 24"
+                        fill="none"
+                        xmlns="http://www.w3.org/2000/svg"
+                      >
+                        <g clip-path="url(#clip0_82_4624)">
+                          <circle cx="12" cy="12" r="12" fill="#4562FF" />
+                          <path
+                            fill-rule="evenodd"
+                            clip-rule="evenodd"
+                            d="M5.50114 12.7402C5.8868 12.3595 6.27246 11.9788 6.64135 11.6147C7.74803 12.7071 8.83793 13.783 9.94461 14.8754C12.4262 12.4257 14.9079 9.97607 17.3727 7.54297C17.7584 7.92366 18.1441 8.30435 18.5129 8.66849C15.6457 11.4988 12.7951 14.3126 9.92784 17.143C8.45227 15.6864 6.95994 14.2133 5.48438 12.7568L5.50114 12.7402Z"
+                            fill="white"
+                          />
+                        </g>
+                        <defs>
+                          <clipPath id="clip0_82_4624">
+                            <rect width="24" height="24" rx="12" fill="white" />
+                          </clipPath>
+                        </defs>
+                      </svg>
+                      <span class="aai-list-item-text"
+                        >Zeit- und Kostenersparnis</span
+                      >
+                    </li>
+                    <li class="aai-list-item d-flex align-items-center">
+                      <svg
+                        class="flex-shrink-0"
+                        width="24"
+                        height="24"
+                        viewBox="0 0 24 24"
+                        fill="none"
+                        xmlns="http://www.w3.org/2000/svg"
+                      >
+                        <g clip-path="url(#clip0_82_4624)">
+                          <circle cx="12" cy="12" r="12" fill="#4562FF" />
+                          <path
+                            fill-rule="evenodd"
+                            clip-rule="evenodd"
+                            d="M5.50114 12.7402C5.8868 12.3595 6.27246 11.9788 6.64135 11.6147C7.74803 12.7071 8.83793 13.783 9.94461 14.8754C12.4262 12.4257 14.9079 9.97607 17.3727 7.54297C17.7584 7.92366 18.1441 8.30435 18.5129 8.66849C15.6457 11.4988 12.7951 14.3126 9.92784 17.143C8.45227 15.6864 6.95994 14.2133 5.48438 12.7568L5.50114 12.7402Z"
+                            fill="white"
+                          />
+                        </g>
+                        <defs>
+                          <clipPath id="clip0_82_4624">
+                            <rect width="24" height="24" rx="12" fill="white" />
+                          </clipPath>
+                        </defs>
+                      </svg>
+                      <span class="aai-list-item-text"
+                        >Skalierbarkeit</span
+                      >
+                    </li>
+                    <li class="aai-list-item d-flex align-items-center">
+                      <svg
+                        class="flex-shrink-0"
+                        width="24"
+                        height="24"
+                        viewBox="0 0 24 24"
+                        fill="none"
+                        xmlns="http://www.w3.org/2000/svg"
+                      >
+                        <g clip-path="url(#clip0_82_4624)">
+                          <circle cx="12" cy="12" r="12" fill="#4562FF" />
+                          <path
+                            fill-rule="evenodd"
+                            clip-rule="evenodd"
+                            d="M5.50114 12.7402C5.8868 12.3595 6.27246 11.9788 6.64135 11.6147C7.74803 12.7071 8.83793 13.783 9.94461 14.8754C12.4262 12.4257 14.9079 9.97607 17.3727 7.54297C17.7584 7.92366 18.1441 8.30435 18.5129 8.66849C15.6457 11.4988 12.7951 14.3126 9.92784 17.143C8.45227 15.6864 6.95994 14.2133 5.48438 12.7568L5.50114 12.7402Z"
+                            fill="white"
+                          />
+                        </g>
+                        <defs>
+                          <clipPath id="clip0_82_4624">
+                            <rect width="24" height="24" rx="12" fill="white" />
+                          </clipPath>
+                        </defs>
+                      </svg>
+                      <span class="aai-list-item-text"
+                        >Verbesserte Genauigkeit</span
+                      >
+                    </li>
+                  </ul>
+                  <div class="mt-5">
+                    <a href="{% url 'contact' %}" class="aai-gradient-outline-btn">Jetzt starten</a>
+                  </div>
+                </div>
+              </div>
+              <div class="col-xl-6 col-lg mt-5 mt-lg-0" data-aos="fade-left">
+                <div>
+                  <img
+                    src="{% static 'assets/img/services/service-3.svg' %}"
+                    class="img-fluid"
+                    alt=""
+                  />
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div
+          class="pt-60 pb-120"
+          style="background: url('{% static 'assets/img/bg/service-1.jpeg' %}') no-repeat center center/cover;"
+
+        >
+          <div class="container">
+            <div class="row align-items-center">
+              <div
+                class="col-xl-6 col-lg order-2 order-lg-1 mt-5 mt-lg-0"
+                data-aos="fade-right"
+              >
+                <div>
+                  <img
+                    src="{% static 'assets/img/services/service-1.svg' %}"
+                    class="img-fluid"
+                    alt=""
+                  />
+                </div>
+              </div>
+              <div class="col-xl-6 col-lg order-1 order-lg-2">
+                <div>
+                  <h2 class="section-title mb-4">
+                    Personalisierung von Marketing & Vertrieb
+                  </h2>
+                  <p class="section-desc">
+                    Dank KI können Sie Kundeninformationen klug nutzen. So können Sie individuelle Angebote machen und Kunden mit den passenden Inhalten erreichen.
+                  </p>
+                  <ul class="aai-list-items mt-4">
+                    <li class="aai-list-item d-flex align-items-center">
+                      <svg
+                        class="flex-shrink-0"
+                        width="24"
+                        height="24"
+                        viewBox="0 0 24 24"
+                        fill="none"
+                        xmlns="http://www.w3.org/2000/svg"
+                      >
+                        <g clip-path="url(#clip0_82_4624)">
+                          <circle cx="12" cy="12" r="12" fill="#4562FF" />
+                          <path
+                            fill-rule="evenodd"
+                            clip-rule="evenodd"
+                            d="M5.50114 12.7402C5.8868 12.3595 6.27246 11.9788 6.64135 11.6147C7.74803 12.7071 8.83793 13.783 9.94461 14.8754C12.4262 12.4257 14.9079 9.97607 17.3727 7.54297C17.7584 7.92366 18.1441 8.30435 18.5129 8.66849C15.6457 11.4988 12.7951 14.3126 9.92784 17.143C8.45227 15.6864 6.95994 14.2133 5.48438 12.7568L5.50114 12.7402Z"
+                            fill="white"
+                          />
+                        </g>
+                        <defs>
+                          <clipPath id="clip0_82_4624">
+                            <rect width="24" height="24" rx="12" fill="white" />
+                          </clipPath>
+                        </defs>
+                      </svg>
+                      <span class="aai-list-item-text"
+                        >Kunden reagieren besser auf personalisierte Angebote.</span
+                      >
+                    </li>
+                    <li class="aai-list-item d-flex align-items-center">
+                      <svg
+                        class="flex-shrink-0"
+                        width="24"
+                        height="24"
+                        viewBox="0 0 24 24"
+                        fill="none"
+                        xmlns="http://www.w3.org/2000/svg"
+                      >
+                        <g clip-path="url(#clip0_82_4624)">
+                          <circle cx="12" cy="12" r="12" fill="#4562FF" />
+                          <path
+                            fill-rule="evenodd"
+                            clip-rule="evenodd"
+                            d="M5.50114 12.7402C5.8868 12.3595 6.27246 11.9788 6.64135 11.6147C7.74803 12.7071 8.83793 13.783 9.94461 14.8754C12.4262 12.4257 14.9079 9.97607 17.3727 7.54297C17.7584 7.92366 18.1441 8.30435 18.5129 8.66849C15.6457 11.4988 12.7951 14.3126 9.92784 17.143C8.45227 15.6864 6.95994 14.2133 5.48438 12.7568L5.50114 12.7402Z"
+                            fill="white"
+                          />
+                        </g>
+                        <defs>
+                          <clipPath id="clip0_82_4624">
+                            <rect width="24" height="24" rx="12" fill="white" />
+                          </clipPath>
+                        </defs>
+                      </svg>
+                      <span class="aai-list-item-text"
+                        >Erhöhte Kaufwahrscheinlichkeit und verbessert die ROI</span
+                      >
+                    </li>
+                    <li class="aai-list-item d-flex align-items-center">
+                      <svg
+                        class="flex-shrink-0"
+                        width="24"
+                        height="24"
+                        viewBox="0 0 24 24"
+                        fill="none"
+                        xmlns="http://www.w3.org/2000/svg"
+                      >
+                        <g clip-path="url(#clip0_82_4624)">
+                          <circle cx="12" cy="12" r="12" fill="#4562FF" />
+                          <path
+                            fill-rule="evenodd"
+                            clip-rule="evenodd"
+                            d="M5.50114 12.7402C5.8868 12.3595 6.27246 11.9788 6.64135 11.6147C7.74803 12.7071 8.83793 13.783 9.94461 14.8754C12.4262 12.4257 14.9079 9.97607 17.3727 7.54297C17.7584 7.92366 18.1441 8.30435 18.5129 8.66849C15.6457 11.4988 12.7951 14.3126 9.92784 17.143C8.45227 15.6864 6.95994 14.2133 5.48438 12.7568L5.50114 12.7402Z"
+                            fill="white"
+                          />
+                        </g>
+                        <defs>
+                          <clipPath id="clip0_82_4624">
+                            <rect width="24" height="24" rx="12" fill="white" />
+                          </clipPath>
+                        </defs>
+                      </svg>
+                      <span class="aai-list-item-text"
+                        >Kundenbindung wird gestärkt.</span
+                      >
+                    </li>
+                  </ul>
+                  <div class="mt-5">
+                    <a href="{% url 'contact' %}" class="aai-gradient-outline-btn">Jetzt starten</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- Service End -->
+
+      <!-- Aai Feature  -->
+      <section
+        class="aai-features"
+        style="
+          background: url('assets/img/bg/aai-feature-bg.jpeg') no-repeat center
+            center/cover;
+        "
+      >
+        <div class="container">
+          <div class="row justify-content-center">
+            <div class="col-xl-8">
+              <div class="aai-section-title mb-3 text-center mb-5">
+                <h2 class="section-title">Das war noch nicht alles!</h2>
+                <p class="section-desc">
+                  Unsere Agentur bietet noch viel mehr
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="row justify-content-center">
+            <div
+              class="col-lg-4 col-md-6 mb-4"
+              data-aos="fade-up"
+              data-aos-delay="50"
+            >
+              <div class="aai-feature-box">
+                <div
+                  class="aai-feature-box-inner d-flex flex-column align-items-center"
+                >
+                  <div>
+                    <img
+                      src="{% static 'assets/img/features/fi-3.svg' %}"
+                      class="aai-feature-icon img-fluid"
+                      alt=""
+                    />
+                  </div>
+                  <h3 class="aai-feature-title">Individuelle KI-Lösungen</h3>
+                  
+                  <a href="{% url 'service_details' %}" class="aai-feature-link">
+                 
+                  </a>
+                </div>
+              </div>
+            </div>
+            <div
+              class="col-lg-4 col-md-6 mb-4"
+              data-aos="fade-up"
+              data-aos-delay="60"
+            >
+              <div class="aai-feature-box">
+                <div
+                  class="aai-feature-box-inner d-flex flex-column align-items-center"
+                >
+                  <div>
+                    <img
+                      src="{% static 'assets/img/features/fi-5.svg' %}"
+                      class="aai-feature-icon img-fluid"
+                      alt=""
+                    />
+                  </div>
+                  <h3 class="aai-feature-title">Empfehlungssysteme</h3>
+                 
+                  <a href="{% url 'service_details' %}" class="aai-feature-link">
+                
+                  </a>
+                </div>
+              </div>
+            </div>
+            <div
+              class="col-lg-4 col-md-6 mb-4"
+              data-aos="fade-up"
+              data-aos-delay="70"
+            >
+              <div class="aai-feature-box">
+                <div
+                  class="aai-feature-box-inner d-flex flex-column align-items-center"
+                >
+                  <div>
+                    <img
+                      src="{% static 'assets/img/features/fi-1.svg' %}"
+                      class="aai-feature-icon img-fluid"
+                      alt=""
+                    />
+                  </div>
+                  <h3 class="aai-feature-title">Datenanalyse und Prognose</h3>
+                 
+                  <a href="{% url 'service_details' %}" class="aai-feature-link">
+                   
+                  </a>
+                </div>
+              </div>
+            </div>
+            <div
+              class="col-lg-4 col-md-6 mb-4"
+              data-aos="fade-up"
+              data-aos-delay="80"
+            >
+              <div class="aai-feature-box">
+                <div
+                  class="aai-feature-box-inner d-flex flex-column align-items-center"
+                >
+                  <div>
+                    <img
+                      src="{% static 'assets/img/features/fi-6.svg' %}"
+                      class="aai-feature-icon img-fluid"
+                      alt=""
+                    />
+                  </div>
+                  <h3 class="aai-feature-title">Vertrieboptimierung</h3>
+                 
+                  <a href="{% url 'service_details' %}" class="aai-feature-link">
+                   
+                  </a>
+                </div>
+              </div>
+            </div>
+            <div
+              class="col-lg-4 col-md-6 mb-4"
+              data-aos="fade-up"
+              data-aos-delay="90"
+            >
+              <div class="aai-feature-box">
+                <div
+                  class="aai-feature-box-inner d-flex flex-column align-items-center"
+                >
+                  <div>
+                    <img
+                      src="{% static 'assets/img/features/fi-2.svg' %}"
+                      class="aai-feature-icon img-fluid"
+                      alt=""
+                    />
+                  </div>
+                  <h3 class="aai-feature-title">Logistikoptimierung</h3>
+                  
+                  <a href="{% url 'service_details' %}" class="aai-feature-link">
+                   
+                  </a>
+                </div>
+              </div>
+            </div>
+            <div
+              class="col-lg-4 col-md-6 mb-4"
+              data-aos="fade-up"
+              data-aos-delay="100"
+            >
+              <div class="aai-feature-box">
+                <div
+                  class="aai-feature-box-inner d-flex flex-column align-items-center"
+                >
+                  <div>
+                    <img
+                      src="{% static 'assets/img/features/fi-4.svg' %}"
+                      class="aai-feature-icon img-fluid"
+                      alt=""
+                    />
+                  </div>
+                  <h3 class="aai-feature-title">Virtuelle Assistenzlösungen</h3>
+                  
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="text-center mt-5" data-aos="fade-up" data-aos-delay="110">
+            <a href="{% url 'contact' %}" class="aai-btn btn-pill-solid"> Kostenloses Beratungsgespräch</a>
+          </div>
+        </div>
+      </section>
+      <!-- Aai Feature  End-->
+
+      <!-- Awards Start -->
+      <section
+        class="aai-awards py-120"
+        style="
+          background: url('assets/img/bg/awards-bg.jpeg') no-repeat center
+            center/cover;
+        "
+      >
+       
+      </section>
+      <!-- Awards End -->
+
+      
+      <!-- Testimonials Start-->
+      <section
+        class="aai-testimonials pb-120"
+        style="background: url('{% static 'assets/img/bg/testimonial-bg.jpeg' %}') no-repeat center center/cover;"
+
+      >
+        <div class="row justify-content-center">
+          <div class="col-xl-8">
+            <div class="aai-section-title mb-3 text-center mb-5">
+              <h2 class="section-title mb-4">
+                Glückliche <span class="gradient-text"> Kunden <br /> </span> 
+              </h2>
+            </div>
+          </div>
+        </div>
+        <div class="swiper testimoniaslSlider mb-4">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide">
+              <div class="aai-testimonial-item">
+                <div class="aai-testimonial-item-top">
+                  <div
+                    class="d-flex align-items-center justify-content-between"
+                  >
+                    <div class="aai-testimonial-quoate">
+                      <svg
+                        width="15"
+                        height="11"
+                        viewBox="0 0 15 11"
+                        fill="none"
+                        xmlns="http://www.w3.org/2000/svg"
+                      >
+                        <path
+                          fill-rule="evenodd"
+                          clip-rule="evenodd"
+                          d="M9.13566 10.6719C8.42933 9.30632 8.07617 7.82304 8.07617 6.22204C8.07617 4.5975 8.50585 3.25548 9.36521 2.196C10.2246 1.13652 11.5607 0.606773 13.3736 0.606773V2.83169C12.7379 2.83169 12.2729 2.97296 11.9786 3.25548C11.6843 3.53801 11.5372 4.07953 11.5372 4.88003V5.23319H14.1152V10.6719H9.13566ZM1.82511 10.6719C1.11878 9.30632 0.76562 7.82304 0.76562 6.22204C0.76562 4.5975 1.1953 3.25548 2.05466 2.196C2.91402 1.13652 4.25015 0.606773 6.06304 0.606773V2.83169C5.42735 2.83169 4.96236 2.97296 4.66805 3.25548C4.37376 3.53801 4.2266 4.07953 4.2266 4.88003V5.23319H6.80468L6.80468 10.6719H1.82511Z"
+                          fill="#747681"
+                        />
+                      </svg>
+                    </div>
+                    <div class="aai-awards-stars">
+                      <i class="fa-solid fa-star"></i>
+                      <i class="fa-solid fa-star"></i>
+                      <i class="fa-solid fa-star"></i>
+                      <i class="fa-solid fa-star"></i>
+                      <i class="fa-solid fa-star"></i>
+                    </div>
+                  </div>
+                  <p class="aai-testimonial-desc">
+                    They not only understand what I say but read between the
+                    lines and also give me ideas of my own.
+                  </p>
+                </div>
+                <div
+                  class="aai-testimonial-item-bottom d-flex align-items-center"
+                >
+                  <div>
+                    <img
+                      src="{% static 'assets/img/avatar/av-5.png' %}"
+                      class="aai-testimonial-author-img"
+                      alt=""
+                    />
+                  </div>
+                  <div>
+                    <h4 class="aai-testimonial-author-name">Kristin Watson</h4>
+                    <span class="aai-testimonial-author-title">
+                      Medical Assistant</span
+                    >
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="aai-testimonial-item">
+                <div class="aai-testimonial-item-top">
+                  <div
+                    class="d-flex align-items-center justify-content-between"
+                  >
+                    <div class="aai-testimonial-quoate">
+                      <svg
+                        width="15"
+                        height="11"
+                        viewBox="0 0 15 11"
+                        fill="none"
+                        xmlns="http://www.w3.org/2000/svg"
+                      >
+                        <path
+                          fill-rule="evenodd"
+                          clip-rule="evenodd"
+                          d="M9.13566 10.6719C8.42933 9.30632 8.07617 7.82304 8.07617 6.22204C8.07617 4.5975 8.50585 3.25548 9.36521 2.196C10.2246 1.13652 11.5607 0.606773 13.3736 0.606773V2.83169C12.7379 2.83169 12.2729 2.97296 11.9786 3.25548C11.6843 3.53801 11.5372 4.07953 11.5372 4.88003V5.23319H14.1152V10.6719H9.13566ZM1.82511 10.6719C1.11878 9.30632 0.76562 7.82304 0.76562 6.22204C0.76562 4.5975 1.1953 3.25548 2.05466 2.196C2.91402 1.13652 4.25015 0.606773 6.06304 0.606773V2.83169C5.42735 2.83169 4.96236 2.97296 4.66805 3.25548C4.37376 3.53801 4.2266 4.07953 4.2266 4.88003V5.23319H6.80468L6.80468 10.6719H1.82511Z"
+                          fill="#747681"
+                        />
+                      </svg>
+                    </div>
+                    <div class="aai-awards-stars">
+                      <i class="fa-solid fa-star"></i>
+                      <i class="fa-solid fa-star"></i>
+                      <i class="fa-solid fa-star"></i>
+                      <i class="fa-solid fa-star"></i>
+                      <i class="fa-solid fa-star"></i>
+                    </div>
+                  </div>
+                  <p class="aai-testimonial-desc">
+                    They not only understand what I say but read between the
+                    lines and also give me ideas of my own.
+                  </p>
+                </div>
+                <div
+                  class="aai-testimonial-item-bottom d-flex align-items-center"
+                >
+                  <div>
+                    <img
+                      src="{% static 'assets/img/avatar/av-6.png' %}"
+                      class="aai-testimonial-author-img"
+                      alt=""
+                    />
+                  </div>
+                  <div>
+                    <h4 class="aai-testimonial-author-name">
+                      Brooklyn Simmons
+                    </h4>
+                    <span class="aai-testimonial-author-title">
+                      President of Sales</span
+                    >
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="aai-testimonial-item">
+                <div class="aai-testimonial-item-top">
+                  <div
+                    class="d-flex align-items-center justify-content-between"
+                  >
+                    <div class="aai-testimonial-quoate">
+                      <svg
+                        width="15"
+                        height="11"
+                        viewBox="0 0 15 11"
+                        fill="none"
+                        xmlns="http://www.w3.org/2000/svg"
+                      >
+                        <path
+                          fill-rule="evenodd"
+                          clip-rule="evenodd"
+                          d="M9.13566 10.6719C8.42933 9.30632 8.07617 7.82304 8.07617 6.22204C8.07617 4.5975 8.50585 3.25548 9.36521 2.196C10.2246 1.13652 11.5607 0.606773 13.3736 0.606773V2.83169C12.7379 2.83169 12.2729 2.97296 11.9786 3.25548C11.6843 3.53801 11.5372 4.07953 11.5372 4.88003V5.23319H14.1152V10.6719H9.13566ZM1.82511 10.6719C1.11878 9.30632 0.76562 7.82304 0.76562 6.22204C0.76562 4.5975 1.1953 3.25548 2.05466 2.196C2.91402 1.13652 4.25015 0.606773 6.06304 0.606773V2.83169C5.42735 2.83169 4.96236 2.97296 4.66805 3.25548C4.37376 3.53801 4.2266 4.07953 4.2266 4.88003V5.23319H6.80468L6.80468 10.6719H1.82511Z"
+                          fill="#747681"
+                        />
+                      </svg>
+                    </div>
+                    <div class="aai-awards-stars">
+                      <i class="fa-solid fa-star"></i>
+                      <i class="fa-solid fa-star"></i>
+                      <i class="fa-solid fa-star"></i>
+                      <i class="fa-solid fa-star"></i>
+                      <i class="fa-solid fa-star"></i>
+                    </div>
+                  </div>
+                  <p class="aai-testimonial-desc">
+                    They not only understand what I say but read between the
+                    lines and also give me ideas of my own.
+                  </p>
+                </div>
+                <div
+                  class="aai-testimonial-item-bottom d-flex align-items-center"
+                >
+                  <div>
+                    <img
+                      src="{% static 'assets/img/avatar/av-7.png' %}"
+                      class="aai-testimonial-author-img"
+                      alt=""
+                    />
+                  </div>
+                  <div>
+                    <h4 class="aai-testimonial-author-name">Annette Black</h4>
+                    <span class="aai-testimonial-author-title">
+                      Nursing Assistant
+                    </span>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="aai-testimonial-item">
+                <div class="aai-testimonial-item-top">
+                  <div
+                    class="d-flex align-items-center justify-content-between"
+                  >
+                    <div class="aai-testimonial-quoate">
+                      <svg
+                        width="15"
+                        height="11"
+                        viewBox="0 0 15 11"
+                        fill="none"
+                        xmlns="http://www.w3.org/2000/svg"
+                      >
+                        <path
+                          fill-rule="evenodd"
+                          clip-rule="evenodd"
+                          d="M9.13566 10.6719C8.42933 9.30632 8.07617 7.82304 8.07617 6.22204C8.07617 4.5975 8.50585 3.25548 9.36521 2.196C10.2246 1.13652 11.5607 0.606773 13.3736 0.606773V2.83169C12.7379 2.83169 12.2729 2.97296 11.9786 3.25548C11.6843 3.53801 11.5372 4.07953 11.5372 4.88003V5.23319H14.1152V10.6719H9.13566ZM1.82511 10.6719C1.11878 9.30632 0.76562 7.82304 0.76562 6.22204C0.76562 4.5975 1.1953 3.25548 2.05466 2.196C2.91402 1.13652 4.25015 0.606773 6.06304 0.606773V2.83169C5.42735 2.83169 4.96236 2.97296 4.66805 3.25548C4.37376 3.53801 4.2266 4.07953 4.2266 4.88003V5.23319H6.80468L6.80468 10.6719H1.82511Z"
+                          fill="#747681"
+                        />
+                      </svg>
+                    </div>
+                    <div class="aai-awards-stars">
+                      <i class="fa-solid fa-star"></i>
+                      <i class="fa-solid fa-star"></i>
+                      <i class="fa-solid fa-star"></i>
+                      <i class="fa-solid fa-star"></i>
+                      <i class="fa-solid fa-star"></i>
+                    </div>
+                  </div>
+                  <p class="aai-testimonial-desc">
+                    They not only understand what I say but read between the
+                    lines and also give me ideas of my own.
+                  </p>
+                </div>
+                <div
+                  class="aai-testimonial-item-bottom d-flex align-items-center"
+                >
+                  <div>
+                    <img
+                      src="{% static 'assets/img/avatar/av-8.png' %}"
+                      class="aai-testimonial-author-img"
+                      alt=""
+                    />
+                  </div>
+                  <div>
+                    <h4 class="aai-testimonial-author-name">Floyd Miles</h4>
+                    <span class="aai-testimonial-author-title">
+                      Dog Trainer</span
+                    >
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="aai-testimonial-item">
+                <div class="aai-testimonial-item-top">
+                  <div
+                    class="d-flex align-items-center justify-content-between"
+                  >
+                    <div class="aai-testimonial-quoate">
+                      <svg
+                        width="15"
+                        height="11"
+                        viewBox="0 0 15 11"
+                        fill="none"
+                        xmlns="http://www.w3.org/2000/svg"
+                      >
+                        <path
+                          fill-rule="evenodd"
+                          clip-rule="evenodd"
+                          d="M9.13566 10.6719C8.42933 9.30632 8.07617 7.82304 8.07617 6.22204C8.07617 4.5975 8.50585 3.25548 9.36521 2.196C10.2246 1.13652 11.5607 0.606773 13.3736 0.606773V2.83169C12.7379 2.83169 12.2729 2.97296 11.9786 3.25548C11.6843 3.53801 11.5372 4.07953 11.5372 4.88003V5.23319H14.1152V10.6719H9.13566ZM1.82511 10.6719C1.11878 9.30632 0.76562 7.82304 0.76562 6.22204C0.76562 4.5975 1.1953 3.25548 2.05466 2.196C2.91402 1.13652 4.25015 0.606773 6.06304 0.606773V2.83169C5.42735 2.83169 4.96236 2.97296 4.66805 3.25548C4.37376 3.53801 4.2266 4.07953 4.2266 4.88003V5.23319H6.80468L6.80468 10.6719H1.82511Z"
+                          fill="#747681"
+                        />
+                      </svg>
+                    </div>
+                    <div class="aai-awards-stars">
+                      <i class="fa-solid fa-star"></i>
+                      <i class="fa-solid fa-star"></i>
+                      <i class="fa-solid fa-star"></i>
+                      <i class="fa-solid fa-star"></i>
+                      <i class="fa-solid fa-star"></i>
+                    </div>
+                  </div>
+                  <p class="aai-testimonial-desc">
+                    They not only understand what I say but read between the
+                    lines and also give me ideas of my own.
+                  </p>
+                </div>
+                <div
+                  class="aai-testimonial-item-bottom d-flex align-items-center"
+                >
+                  <div>
+                    <img
+                      src="{% static 'assets/img/avatar/av-5.png' %}"
+                      class="aai-testimonial-author-img"
+                      alt=""
+                    />
+                  </div>
+                  <div>
+                    <h4 class="aai-testimonial-author-name">Esther Howard</h4>
+                    <span class="aai-testimonial-author-title"
+                      >Nursing Assistant</span
+                    >
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="aai-testimonial-item">
+                <div class="aai-testimonial-item-top">
+                  <div
+                    class="d-flex align-items-center justify-content-between"
+                  >
+                    <div class="aai-testimonial-quoate">
+                      <svg
+                        width="15"
+                        height="11"
+                        viewBox="0 0 15 11"
+                        fill="none"
+                        xmlns="http://www.w3.org/2000/svg"
+                      >
+                        <path
+                          fill-rule="evenodd"
+                          clip-rule="evenodd"
+                          d="M9.13566 10.6719C8.42933 9.30632 8.07617 7.82304 8.07617 6.22204C8.07617 4.5975 8.50585 3.25548 9.36521 2.196C10.2246 1.13652 11.5607 0.606773 13.3736 0.606773V2.83169C12.7379 2.83169 12.2729 2.97296 11.9786 3.25548C11.6843 3.53801 11.5372 4.07953 11.5372 4.88003V5.23319H14.1152V10.6719H9.13566ZM1.82511 10.6719C1.11878 9.30632 0.76562 7.82304 0.76562 6.22204C0.76562 4.5975 1.1953 3.25548 2.05466 2.196C2.91402 1.13652 4.25015 0.606773 6.06304 0.606773V2.83169C5.42735 2.83169 4.96236 2.97296 4.66805 3.25548C4.37376 3.53801 4.2266 4.07953 4.2266 4.88003V5.23319H6.80468L6.80468 10.6719H1.82511Z"
+                          fill="#747681"
+                        />
+                      </svg>
+                    </div>
+                    <div class="aai-awards-stars">
+                      <i class="fa-solid fa-star"></i>
+                      <i class="fa-solid fa-star"></i>
+                      <i class="fa-solid fa-star"></i>
+                      <i class="fa-solid fa-star"></i>
+                      <i class="fa-solid fa-star"></i>
+                    </div>
+                  </div>
+                  <p class="aai-testimonial-desc">
+                    They not only understand what I say but read between the
+                    lines and also give me ideas of my own.
+                  </p>
+                </div>
+                <div
+                  class="aai-testimonial-item-bottom d-flex align-items-center"
+                >
+                  <div>
+                    <img
+                      src="{% static 'assets/img/avatar/av-5.png' %}"
+                      class="aai-testimonial-author-img"
+                      alt=""
+                    />
+                  </div>
+                  <div>
+                    <h4 class="aai-testimonial-author-name">Kristin Watson</h4>
+                    <span class="aai-testimonial-author-title">
+                      Medical Assistant</span
+                    >
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="aai-testimonial-item">
+                <div class="aai-testimonial-item-top">
+                  <div
+                    class="d-flex align-items-center justify-content-between"
+                  >
+                    <div class="aai-testimonial-quoate">
+                      <svg
+                        width="15"
+                        height="11"
+                        viewBox="0 0 15 11"
+                        fill="none"
+                        xmlns="http://www.w3.org/2000/svg"
+                      >
+                        <path
+                          fill-rule="evenodd"
+                          clip-rule="evenodd"
+                          d="M9.13566 10.6719C8.42933 9.30632 8.07617 7.82304 8.07617 6.22204C8.07617 4.5975 8.50585 3.25548 9.36521 2.196C10.2246 1.13652 11.5607 0.606773 13.3736 0.606773V2.83169C12.7379 2.83169 12.2729 2.97296 11.9786 3.25548C11.6843 3.53801 11.5372 4.07953 11.5372 4.88003V5.23319H14.1152V10.6719H9.13566ZM1.82511 10.6719C1.11878 9.30632 0.76562 7.82304 0.76562 6.22204C0.76562 4.5975 1.1953 3.25548 2.05466 2.196C2.91402 1.13652 4.25015 0.606773 6.06304 0.606773V2.83169C5.42735 2.83169 4.96236 2.97296 4.66805 3.25548C4.37376 3.53801 4.2266 4.07953 4.2266 4.88003V5.23319H6.80468L6.80468 10.6719H1.82511Z"
+                          fill="#747681"
+                        />
+                      </svg>
+                    </div>
+                    <div class="aai-awards-stars">
+                      <i class="fa-solid fa-star"></i>
+                      <i class="fa-solid fa-star"></i>
+                      <i class="fa-solid fa-star"></i>
+                      <i class="fa-solid fa-star"></i>
+                      <i class="fa-solid fa-star"></i>
+                    </div>
+                  </div>
+                  <p class="aai-testimonial-desc">
+                    They not only understand what I say but read between the
+                    lines and also give me ideas of my own.
+                  </p>
+                </div>
+                <div
+                  class="aai-testimonial-item-bottom d-flex align-items-center"
+                >
+                  <div>
+                    <img
+                      src="{% static 'assets/img/avatar/av-6.png' %}"
+                      class="aai-testimonial-author-img"
+                      alt=""
+                    />
+                  </div>
+                  <div>
+                    <h4 class="aai-testimonial-author-name">
+                      Brooklyn Simmons
+                    </h4>
+                    <span class="aai-testimonial-author-title">
+                      President of Sales</span
+                    >
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="aai-testimonial-item">
+                <div class="aai-testimonial-item-top">
+                  <div
+                    class="d-flex align-items-center justify-content-between"
+                  >
+                    <div class="aai-testimonial-quoate">
+                      <svg
+                        width="15"
+                        height="11"
+                        viewBox="0 0 15 11"
+                        fill="none"
+                        xmlns="http://www.w3.org/2000/svg"
+                      >
+                        <path
+                          fill-rule="evenodd"
+                          clip-rule="evenodd"
+                          d="M9.13566 10.6719C8.42933 9.30632 8.07617 7.82304 8.07617 6.22204C8.07617 4.5975 8.50585 3.25548 9.36521 2.196C10.2246 1.13652 11.5607 0.606773 13.3736 0.606773V2.83169C12.7379 2.83169 12.2729 2.97296 11.9786 3.25548C11.6843 3.53801 11.5372 4.07953 11.5372 4.88003V5.23319H14.1152V10.6719H9.13566ZM1.82511 10.6719C1.11878 9.30632 0.76562 7.82304 0.76562 6.22204C0.76562 4.5975 1.1953 3.25548 2.05466 2.196C2.91402 1.13652 4.25015 0.606773 6.06304 0.606773V2.83169C5.42735 2.83169 4.96236 2.97296 4.66805 3.25548C4.37376 3.53801 4.2266 4.07953 4.2266 4.88003V5.23319H6.80468L6.80468 10.6719H1.82511Z"
+                          fill="#747681"
+                        />
+                      </svg>
+                    </div>
+                    <div class="aai-awards-stars">
+                      <i class="fa-solid fa-star"></i>
+                      <i class="fa-solid fa-star"></i>
+                      <i class="fa-solid fa-star"></i>
+                      <i class="fa-solid fa-star"></i>
+                      <i class="fa-solid fa-star"></i>
+                    </div>
+                  </div>
+                  <p class="aai-testimonial-desc">
+                    They not only understand what I say but read between the
+                    lines and also give me ideas of my own.
+                  </p>
+                </div>
+                <div
+                  class="aai-testimonial-item-bottom d-flex align-items-center"
+                >
+                  <div>
+                    <img
+                      src="{% static 'assets/img/avatar/av-7.png' %}"
+                      class="aai-testimonial-author-img"
+                      alt=""
+                    />
+                  </div>
+                  <div>
+                    <h4 class="aai-testimonial-author-name">Annette Black</h4>
+                    <span class="aai-testimonial-author-title">
+                      Nursing Assistant
+                    </span>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="aai-testimonial-item">
+                <div class="aai-testimonial-item-top">
+                  <div
+                    class="d-flex align-items-center justify-content-between"
+                  >
+                    <div class="aai-testimonial-quoate">
+                      <svg
+                        width="15"
+                        height="11"
+                        viewBox="0 0 15 11"
+                        fill="none"
+                        xmlns="http://www.w3.org/2000/svg"
+                      >
+                        <path
+                          fill-rule="evenodd"
+                          clip-rule="evenodd"
+                          d="M9.13566 10.6719C8.42933 9.30632 8.07617 7.82304 8.07617 6.22204C8.07617 4.5975 8.50585 3.25548 9.36521 2.196C10.2246 1.13652 11.5607 0.606773 13.3736 0.606773V2.83169C12.7379 2.83169 12.2729 2.97296 11.9786 3.25548C11.6843 3.53801 11.5372 4.07953 11.5372 4.88003V5.23319H14.1152V10.6719H9.13566ZM1.82511 10.6719C1.11878 9.30632 0.76562 7.82304 0.76562 6.22204C0.76562 4.5975 1.1953 3.25548 2.05466 2.196C2.91402 1.13652 4.25015 0.606773 6.06304 0.606773V2.83169C5.42735 2.83169 4.96236 2.97296 4.66805 3.25548C4.37376 3.53801 4.2266 4.07953 4.2266 4.88003V5.23319H6.80468L6.80468 10.6719H1.82511Z"
+                          fill="#747681"
+                        />
+                      </svg>
+                    </div>
+                    <div class="aai-awards-stars">
+                      <i class="fa-solid fa-star"></i>
+                      <i class="fa-solid fa-star"></i>
+                      <i class="fa-solid fa-star"></i>
+                      <i class="fa-solid fa-star"></i>
+                      <i class="fa-solid fa-star"></i>
+                    </div>
+                  </div>
+                  <p class="aai-testimonial-desc">
+                    They not only understand what I say but read between the
+                    lines and also give me ideas of my own.
+                  </p>
+                </div>
+                <div
+                  class="aai-testimonial-item-bottom d-flex align-items-center"
+                >
+                  <div>
+                    <img
+                      src="{% static 'assets/img/avatar/av-8.png' %}"
+                      class="aai-testimonial-author-img"
+                      alt=""
+                    />
+                  </div>
+                  <div>
+                    <h4 class="aai-testimonial-author-name">Floyd Miles</h4>
+                    <span class="aai-testimonial-author-title">
+                      Dog Trainer</span
+                    >
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="aai-testimonial-item">
+                <div class="aai-testimonial-item-top">
+                  <div
+                    class="d-flex align-items-center justify-content-between"
+                  >
+                    <div class="aai-testimonial-quoate">
+                      <svg
+                        width="15"
+                        viewBox="0 0 15 11"
+                        fill="none"
+                        xmlns="http://www.w3.org/2000/svg"
+                      >
+                        <path
+                          fill-rule="evenodd"
+                          clip-rule="evenodd"
+                          d="M9.13566 10.6719C8.42933 9.30632 8.07617 7.82304 8.07617 6.22204C8.07617 4.5975 8.50585 3.25548 9.36521 2.196C10.2246 1.13652 11.5607 0.606773 13.3736 0.606773V2.83169C12.7379 2.83169 12.2729 2.97296 11.9786 3.25548C11.6843 3.53801 11.5372 4.07953 11.5372 4.88003V5.23319H14.1152V10.6719H9.13566ZM1.82511 10.6719C1.11878 9.30632 0.76562 7.82304 0.76562 6.22204C0.76562 4.5975 1.1953 3.25548 2.05466 2.196C2.91402 1.13652 4.25015 0.606773 6.06304 0.606773V2.83169C5.42735 2.83169 4.96236 2.97296 4.66805 3.25548C4.37376 3.53801 4.2266 4.07953 4.2266 4.88003V5.23319H6.80468L6.80468 10.6719H1.82511Z"
+                          fill="#747681"
+                        />
+                      </svg>
+                    </div>
+                    <div class="aai-awards-stars">
+                      <i class="fa-solid fa-star"></i>
+                      <i class="fa-solid fa-star"></i>
+                      <i class="fa-solid fa-star"></i>
+                      <i class="fa-solid fa-star"></i>
+                      <i class="fa-solid fa-star"></i>
+                    </div>
+                  </div>
+                  <p class="aai-testimonial-desc">
+                    They not only understand what I say but read between the
+                    lines and also give me ideas of my own.
+                  </p>
+                </div>
+                <div
+                  class="aai-testimonial-item-bottom d-flex align-items-center"
+                >
+                  <div>
+                    <img
+                      src="{% static 'assets/img/avatar/av-5.png' %}"
+                      class="aai-testimonial-author-img"
+                      alt=""
+                    />
+                  </div>
+                  <div>
+                    <h4 class="aai-testimonial-author-name">Esther Howard</h4>
+                    <span class="aai-testimonial-author-title"
+                      >Nursing Assistant</span
+                    >
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+        
+      </section>
+      <!-- Testimonials End -->
+      
+
+
+      
+
+
+
+
+      <section class="aai-about-service">
+        <div class="container">
+          <div class="row">
+            <div class="col-12">
+              <h2 class="section-title mb-4">
+                Warum <span class="gradient-text"> KIXP <br /> </span> 
+              </h2>
+              <ul class="aai-list-items mt-4">
+                <li class="aai-list-item d-flex align-items-center">
+                  <svg
+                    class="flex-shrink-0"
+                    width="24"
+                    height="24"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <g clip-path="url(#clip0_82_4624)">
+                      <circle cx="12" cy="12" r="12" fill="#4562FF" />
+                      <path
+                        fill-rule="evenodd"
+                        clip-rule="evenodd"
+                        d="M5.50114 12.7402C5.8868 12.3595 6.27246 11.9788 6.64135 11.6147C7.74803 12.7071 8.83793 13.783 9.94461 14.8754C12.4262 12.4257 14.9079 9.97607 17.3727 7.54297C17.7584 7.92366 18.1441 8.30435 18.5129 8.66849C15.6457 11.4988 12.7951 14.3126 9.92784 17.143C8.45227 15.6864 6.95994 14.2133 5.48438 12.7568L5.50114 12.7402Z"
+                        fill="white"
+                      />
+                    </g>
+                    <defs>
+                      <clipPath id="clip0_82_4624">
+                        <rect width="24" height="24" rx="12" fill="white" />
+                      </clipPath>
+                    </defs>
+                  </svg>
+                  <span class="aai-list-item-text"
+                    >Erfahrung: Mit sieben Jahren an der Spitze der KI-Forschung und -Anwendung haben wir tiefgehende Kenntnisse und praktische Erfahrung in einer breiten Palette von Branchen gesammelt.</span
+                  >
+                </li>
+                <li class="aai-list-item d-flex align-items-center">
+                  <svg
+                    class="flex-shrink-0"
+                    width="24"
+                    height="24"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <g clip-path="url(#clip0_82_4624)">
+                      <circle cx="12" cy="12" r="12" fill="#4562FF" />
+                      <path
+                        fill-rule="evenodd"
+                        clip-rule="evenodd"
+                        d="M5.50114 12.7402C5.8868 12.3595 6.27246 11.9788 6.64135 11.6147C7.74803 12.7071 8.83793 13.783 9.94461 14.8754C12.4262 12.4257 14.9079 9.97607 17.3727 7.54297C17.7584 7.92366 18.1441 8.30435 18.5129 8.66849C15.6457 11.4988 12.7951 14.3126 9.92784 17.143C8.45227 15.6864 6.95994 14.2133 5.48438 12.7568L5.50114 12.7402Z"
+                        fill="white"
+                      />
+                    </g>
+                    <defs>
+                      <clipPath id="clip0_82_4624">
+                        <rect width="24" height="24" rx="12" fill="white" />
+                      </clipPath>
+                    </defs>
+                  </svg>
+                  <span class="aai-list-item-text"
+                    >Individuelle Lösungen: Wir verstehen, dass jedes Unternehmen einzigartig ist. Deshalb bieten wir Lösungen, die individuell auf die spezifischen Herausforderungen und Ziele jedes Kunden zugeschnitten sind.</span
+                  >
+                </li>
+                <li class="aai-list-item d-flex align-items-center">
+                  <svg
+                    class="flex-shrink-0"
+                    width="24"
+                    height="24"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <g clip-path="url(#clip0_82_4624)">
+                      <circle cx="12" cy="12" r="12" fill="#4562FF" />
+                      <path
+                        fill-rule="evenodd"
+                        clip-rule="evenodd"
+                        d="M5.50114 12.7402C5.8868 12.3595 6.27246 11.9788 6.64135 11.6147C7.74803 12.7071 8.83793 13.783 9.94461 14.8754C12.4262 12.4257 14.9079 9.97607 17.3727 7.54297C17.7584 7.92366 18.1441 8.30435 18.5129 8.66849C15.6457 11.4988 12.7951 14.3126 9.92784 17.143C8.45227 15.6864 6.95994 14.2133 5.48438 12.7568L5.50114 12.7402Z"
+                        fill="white"
+                      />
+                    </g>
+                    <defs>
+                      <clipPath id="clip0_82_4624">
+                        <rect width="24" height="24" rx="12" fill="white" />
+                      </clipPath>
+                    </defs>
+                  </svg>
+                  <span class="aai-list-item-text"
+                    >Partnerschaft auf Augenhöhe: Wir sehen uns nicht nur als Dienstleister, sondern als Partner unserer Kunden. Wir setzen auf eine offene Kommunikation und enge Zusammenarbeit, um sicherzustellen, dass Ihre Vision und Ziele stets im Vordergrund stehen.</span
+                  >
+                </li>
+              </ul>
+           
+                <div class="py-5">
+                  <div class="aai-about-service-cta">
+                    <div class="row justify-content-between align-items-center">
+                      <div class="col-lg-6">
+                        <div>
+                          <h3 class="aai-about-service-title">
+                            Bereit für den technologischen Durchbruch? Sie sind nur einen Klick davon entfernt.
+                          </h3>
+                          
+                        </div>
+                      </div>
+                      <div class="col-lg-6 mt-5 mt-lg-0">
+                        <div class="d-flex justify-content-lg-end">
+                          <a href="{% url 'contact' %}" class="aai-btn btn-pill-solid"
+                            >Zum Erstgespräch!</a
+                          >
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- About Service End -->
+
+    
+
+
+    </main>
+    <!-- Main End -->
+
+    <!-- Footer Start -->
+    <footer
+      class="aai-footer pt-120"
+      style="background: url('{% static 'assets/img/bg/footer-bg.jpeg' %}') no-repeat center center/cover;"
+    >
+      <div class="container">
+          
+        <div class="aai-footer-navigation-widgets py-80">
+          <div class="row">
+            <div
+              class="col-xl-4 col-lg-4 col-md-12"
+              data-aos="fade-right"
+              data-aos-duration="1500"
+              data-aos-delay="50"
+            >
+              <div class="aai-footer-info">
+                <a href="" class="aai-footer-logo">
+                  <img src="{% static 'assets/img/logo/logos-m.svg' %}" alt="" />
+                </a>
+                <p class="aai-footer-desc">
+                  Mit unserer KI-Agentur<br /> entdecken Sie die Zukunft.
+                </p>
+
+                <div class="aai-social-links d-flex">
+                  <a href="https://twitter.com/KIXP_de" target="_blank" rel="noopener noreferrer">
+                    <i class="fa-brands fa-twitter"></i
+                  ></a>
+                  <a href="https://www.instagram.com/kixp.de/" target="_blank" rel="noopener noreferrer">
+                    <i class="fa-brands fa-instagram"></i
+                  ></a>
+                </div>
+
+                
+              </div>
+            </div>
+            <div class="col-xl-8 col-lg-8 col-md-12 mt-5 mt-lg-0">
+              <div class="row">
+                <div
+                  class="col-xl-4 col-lg-4 col-md-4 mb-5 mb-lg-0"
+                  data-aos="fade-up"
+                  data-aos-delay="100"
+                  data-aos-duration="1500"
+                >
+                <nav class="aai-footer-nav">
+                  <h3 class="aai-footer-nav-title">Links</h3>
+                  <ul class="aai-footer-nav-list">
+                      <li class="aai-footer-nav-list-item">
+                          <a href="{% url 'home' %}" class="aai-footer-nav-link"> </a>
+                      </li>
+                      <li class="aai-footer-nav-list-item">
+                          <a href="{% url 'datenschutz' %}" class="aai-footer-nav-link"> Datenschutz </a>
+                      </li>
+                      <li class="aai-footer-nav-list-item">
+                          <a href="{% url 'impressum' %}" class="aai-footer-nav-link"> Impressum </a>
+                      </li>
+
+
+                  </ul>
+              </nav>
+              
+                </div>
+                <div
+                  class="col-xl-4 col-lg-4 col-md-4 mb-5 mb-lg-0"
+                  data-aos="fade-up"
+                  data-aos-delay="300"
+                  data-aos-duration="1500"
+                >
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="aai-footer-copyright text-center">
+        <p class="aai-copyright-text">Copyright @2024 KiXp.de</p>
+      </div>
+      </div>
+    </footer>
+    <!-- Footer End -->
+
+    <!-- All JS -->
+    <script src="{% static 'assets/js/typed.js' %}"></script>
+    <script src="{% static 'assets/js/aos.js' %}"></script>
+    <script src="{% static 'assets/js/swiper-bundle.min.js' %}"></script>
+    <script src="{% static 'assets/js/bootstrap.bundle.min.js' %}"></script>
+    <script src="{% static 'assets/js/glightbox-min.js' %}"></script>
+    <script src="{% static 'assets/js/app.js' %}"></script>
+
+
+    
+  </body>
+</html>

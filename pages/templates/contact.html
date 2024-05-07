@@ -1,0 +1,258 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>
+      Chatbot
+    </title>
+    <link rel="stylesheet" href="{% static 'assets/css/aos.css' %}" />
+    <link rel="stylesheet" href="{% static 'assets/css/fontawesome-all.min.css' %}" />
+    <link rel="stylesheet" href="{% static 'assets/css/bootstrap.min.css' %}" />
+    <link rel="stylesheet" href="{% static 'assets/css/glightbox-min.css' %}" />
+    <link rel="stylesheet" href="{% static 'assets/css/swiper-bundle.min.css' %}" />
+    <link rel="stylesheet" href="{% static 'assets/css/style.css' %}" />
+  </head>
+  <body>
+
+    
+    <!-- Menu Start -->
+    <header class="header-primary">
+      <div class="container">
+        <nav class="navbar navbar-expand-xl justify-content-between">
+          <a href="{% url 'home' %}">
+            <img src="{% static 'assets/img/logo/logos-m.svg' %}" alt="" />
+          </a>
+          <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav mx-auto">
+              <li class="d-block d-xl-none">
+                <div class="logo">
+                  <a href="{% url 'home' %}"
+                    ><img src="{% static 'assets/img/logo/logos-m.svg' %}" alt=""
+                  /></a>
+                </div>
+              </li>
+              <li class="nav-item">
+                <a href="{% url 'home' %}" class="nav-link"> </a>
+            </li>
+            
+              
+            </ul>
+            <div class="d-flex align-items-center gap-4 mt-4">
+              
+            </div>
+          </div>
+          <div class="navbar-right d-flex align-items-center gap-4">
+            
+            <button
+              class="navbar-toggler d-block d-xl-none"
+              type="button"
+              data-bs-toggle="collapse"
+              data-bs-target="#navbarNav"
+              aria-controls="navbarNav"
+              aria-expanded="false"
+              aria-label="Toggle navigation"
+            >
+              <span></span>
+            </button>
+          </div>
+        </nav>
+      </div>
+    </header>
+    <!-- Menu End -->
+
+    <main class="wrapper">
+      <!-- Breadcrumb Start -->
+      <section
+        class="aai-breadcrumb"
+        style="background: url('{% static 'assets/img/bg/bread-crumb-bg.jpeg' %}') no-repeat center center/cover;"
+      >
+        <div class="container">
+          <div class="row justify-content-center">
+            <div class="col-auto">
+              <div class="">
+                <h2 class="section-title mb-1">
+                  Erstgespräch via <span class="gradient-text"> CHATBOT </span>
+                </h2>
+                <h2 class="section-title mb-2">vereinbaren 👇🏻<span class="gradient-text">  <br /><br /> </span> 
+                </h2>
+
+                <style>
+                  
+                  
+                  
+             
+                  .center-div {
+                    width: 25vw;
+                    height: 45vh;
+                    background-color: rgb(202, 71, 255);
+                    border-radius: 5px;
+                    padding: 5px;
+                    box-sizing: border-box;
+                    color: white;
+                    justify-content: center;
+                    align-items: center;
+                    text-align: center;
+                  }
+            
+
+                  
+                </style>
+          
+                <div>
+                  <div class="absolute inset-1">
+                    <div class="center-div relative h-full w-full overflow-clip rounded-md border border-zinc-200 bg-white p-2 px-0 py-0">
+                      <iframe
+                        style="border: none;"
+                        srcdoc="<body><script src='https://cdn.botpress.cloud/webchat/v1/inject.js'></script>
+                        <script>
+                          window.botpressWebChat.init({
+                              'composerPlaceholder': '',
+                              'botName': 'Kixp',
+                              'botId': '546510af-eaff-46e0-af0a-20418378f710',
+                              'hostUrl': 'https://cdn.botpress.cloud/webchat/v1',
+                              'messagingUrl': 'https://messaging.botpress.cloud',
+                              'clientId': '546510af-eaff-46e0-af0a-20418378f710',
+                              'enableConversationDeletion': true,
+                              'showPoweredBy': false,
+                              'className': 'webchatIframe',
+                              'containerWidth': '100%25',
+                              'layoutWidth': '100%25',
+                              'hideWidget': true,
+                              'showCloseButton': false,
+                              'disableAnimations': true,
+                              'closeOnEscape': false,
+                              'showConversationsButton': false,
+                              'enableTranscriptDownload': false
+                              
+                          });
+                        window.botpressWebChat.onEvent(function () { window.botpressWebChat.sendEvent({ type: 'show' }) }, ['LIFECYCLE.LOADED']);
+                        </script></body>"
+                        width="100%"
+                        height="100%"
+                      ></iframe>
+
+                    </div>
+
+                  </div>
+
+                </div>   
+     
+              </div>
+              
+              <h3 class="aai-contact-widget-title"> <br /></h3>
+              <h2 class="section-title mb-1">
+                oder ➡️ Mail:<span class="gradient-text"> info@kixp.de </span>
+              </h2>
+              <!--
+                <h2 class="section-title mb-1">
+                oder ➡️ Tel:<span class="gradient-text"> 015251509689 </span>
+              </h2>  
+              -->
+            
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- Breadcrumb End -->
+      
+    
+      
+      
+      <!-- Contact Form End -->
+    </main>
+
+    
+    <!-- Footer Start -->
+    <footer
+      class="aai-footer pt-120"
+      style="background: url('{% static 'assets/img/bg/footer-bg.jpeg' %}') no-repeat center center/cover;"
+    >
+      <div class="container">
+          
+        <div class="aai-footer-navigation-widgets py-80">
+          <div class="row">
+            <div
+              class="col-xl-4 col-lg-4 col-md-12"
+              data-aos="fade-right"
+              data-aos-duration="1500"
+              data-aos-delay="50"
+            >
+              <div class="aai-footer-info">
+                <a href="" class="aai-footer-logo">
+                  <img src="{% static 'assets/img/logo/logos-m.svg' %}" alt="" />
+                </a>
+                <p class="aai-footer-desc">
+                  Mit unserer KI-Agentur<br /> entdecken Sie die Zukunft.
+                </p>
+
+                <div class="aai-social-links d-flex">
+                  <a href="https://twitter.com/KIXP_de" target="_blank" rel="noopener noreferrer">
+                    <i class="fa-brands fa-twitter"></i
+                  ></a>
+                  <a href="https://www.instagram.com/kixp.de/" target="_blank" rel="noopener noreferrer">
+                    <i class="fa-brands fa-instagram"></i
+                  ></a>
+                </div>
+
+                
+              </div>
+            </div>
+            <div class="col-xl-8 col-lg-8 col-md-12 mt-5 mt-lg-0">
+              <div class="row">
+                <div
+                  class="col-xl-4 col-lg-4 col-md-4 mb-5 mb-lg-0"
+                  data-aos="fade-up"
+                  data-aos-delay="100"
+                  data-aos-duration="1500"
+                >
+                <nav class="aai-footer-nav">
+                  <h3 class="aai-footer-nav-title">Links</h3>
+                  <ul class="aai-footer-nav-list">
+                      <li class="aai-footer-nav-list-item">
+                          <a href="{% url 'home' %}" class="aai-footer-nav-link"> </a>
+                      </li>
+                      <li class="aai-footer-nav-list-item">
+                          <a href="{% url 'datenschutz' %}" class="aai-footer-nav-link"> Datenschutz </a>
+                      </li>
+                      <li class="aai-footer-nav-list-item">
+                          <a href="{% url 'impressum' %}" class="aai-footer-nav-link"> Impressum </a>
+                      </li>
+
+
+                  </ul>
+              </nav>
+              
+                </div>
+                <div
+                  class="col-xl-4 col-lg-4 col-md-4 mb-5 mb-lg-0"
+                  data-aos="fade-up"
+                  data-aos-delay="300"
+                  data-aos-duration="1500"
+                >
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="aai-footer-copyright text-center">
+        <p class="aai-copyright-text">Copyright @2024 KiXp.de</p>
+      </div>
+      </div>
+    </footer>
+    <!-- Footer End -->
+
+    <!-- All JS -->
+    <script src="{% static 'assets/js/typed.js' %}"></script>
+    <script src="{% static 'assets/js/aos.js' %}"></script>
+    <script src="{% static 'assets/js/swiper-bundle.min.js' %}"></script>
+    <script src="{% static 'assets/js/bootstrap.bundle.min.js' %}"></script>
+    <script src="{% static 'assets/js/glightbox-min.js' %}"></script>
+    <script src="{% static 'assets/js/app.js' %}"></script>
+
+
+    
+  </body>
+</html>
